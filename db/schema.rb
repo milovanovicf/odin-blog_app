@@ -22,7 +22,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_02_20_232434) do
     t.string "commenter"
     t.text "body"
     t.integer "article_id", null: false
-    t.datetime "created_at", null: false
+    t.datetime "created_at", #null: false
     t.datetime "updated_at", null: false
     t.index ["article_id"], name: "index_comments_on_article_id"
   end
